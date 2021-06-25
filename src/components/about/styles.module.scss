@@ -1,0 +1,84 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  h2 {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 2.22px;
+    margin-bottom: 20px;
+    @media (max-width: 1100px) {
+      font-size: 32px;
+    }
+  }
+  button {
+    height: 48px;
+    width: 135px;
+    font-weight: 700;
+    border-radius: 12px;
+    margin-right: 12px;
+    font-size: 17px;
+    background-color: white;
+    cursor: pointer;
+    &:hover {
+      background: rgba(0, 0, 0, 0.904);
+      color: white;
+    }
+    @media (max-width: 514px) {
+      height: 28px;
+      width: 100px;
+      font-size: 12px;
+    }
+    // border: transparent;
+  }
+  .activeIcon {
+    background: rgba(0, 0, 0, 0.904);
+    color: white;
+  }
+  .content {
+    display: flex;
+    width: 60vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 1600px) {
+      width: 80vw;
+    }
+    margin-top: 40px;
+    .infoCard {
+      height: 12rem;
+      width: 28rem;
+      background-color: rgba(0, 0, 0, 0.04);
+      margin-left: 20px;
+      margin-bottom: 20px;
+      padding: 24px;
+      // @media (max-width: 1170px) {
+      //   width: 26vw;
+      //   height: 12rem;
+      // }
+      .position {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24.8px;
+        margin-bottom: 1rem;
+        color: rgba(0, 0, 0, 0.92);
+      }
+      .company {
+        font-weight: 600;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.68);
+      }
+      .link {
+        color: rgba(0, 0, 0, 0.959);
+        font-weight: 600;
+      }
+      .date {
+        color: rgba(0, 0, 0, 0.68);
+      }
+      p:last-child {
+        margin-top: 30px;
+        columns: rgba(0, 0, 0, 0.932);
+      }
+    }
+  }
+}
